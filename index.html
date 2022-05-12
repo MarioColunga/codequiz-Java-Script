@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Code Quiz</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        
+        <header>
+            <a id="highscores" href="assets/highscores.html">View Highscores</a>
+            <h4>Time: <span id="time">0</span></h4>
+        </header>
+
+        <main>
+            <section id="rules">
+                <h1 id="quiz-title">Coding Quiz Challenge</h1>
+                <p id="intro">
+                    Try to answer the following code-related questions within the
+                    time limit. Keep in mind that incorrect answers will penalize
+                    your score/time by ten seconds!
+                </p>
+                <button id="start-button">Start Quiz</button>
+            </section>
+
+            <section id="qone" class="questions">
+                <p id="data-types">
+                    Commonly used data types DO NOT include:
+                </p>
+                <ol id="qone-options">
+                    <li><button class="qone-answers incorrect qone-incorrect">strings</button></li>
+                    <li><button class="qone-answers incorrect qone-incorrect">booleans</button></li>
+                    <li><button id="qone-correct" class="qone-answers correct">alerts</button></li>
+                    <li><button class="qone-answers incorrect qone-incorrect">numbers</button></li>
+                </ol>
+            </section>
+
+            <section id="qtwo" class="questions">
+                <p>
+                    The condition in an if / else statement is enclosed within ______.
+                </p>
+                <ol id="qtwo-options">
+                    <li><button class="qtwo-answers incorrect qtwo-incorrect">quotes</button></li>
+                    <li><button class="qtwo-answers incorrect qtwo-incorrect">curly brackets</button></li>
+                    <li><button id="qtwo-correct" class="qtwo-answers correct">parentheses</button></li>
+                    <li><button class="qtwo-answers incorrect qtwo-incorrect">square brackets</button></li>
+                </ol>
+            </section>
+
+            <section id="qthree" class="questions">
+                <p id="arrays">
+                    Arrays in JavaScript can be used to store ______.
+                </p>
+                <ol id="qthree-options">
+                    <li><button class="qthree-answers incorrect qthree-incorrect">numbers and strings</button></li>
+                    <li><button class="qthree-answers incorrect qthree-incorrect">other arrays</button></li>
+                    <li><button class="qthree-answers incorrect qthree-incorrect">booleans</button></li>
+                    <li><button id="qthree-correct" class="qthree-answers correct">all of the above</button></li>
+                </ol>
+            </section>
+
+            <section id="qfour" class="questions">
+                <p id="strings">
+                    String values must be enclosed within ______ when being assigned to variables.
+                </p>
+                <ol id="qfour-options">
+                    <li><button class="qfour-answers incorrect qfour-incorrect">commas</button></li>
+                    <li><button class="qfour-answers incorrectqfour-incorrect">curly brackets</button></li>
+                    <li><button id="qfour-correct" class="qfour-answers correct">quotes</button></li>
+                    <li><button class="qfour-answers incorrect qfour-incorrect">parentheses</button></li>
+                </ol>
+            </section>
+
+            <section id="qfive" class="questions">
+                <p id="console-log">
+                    A very useful tool used during development and debugging for printing
+                    content to the debugger is:
+                </p>
+                <ol id="qfive-options">
+                    <li><button class="qfive-answers incorrect qfive-incorrect">JavaScript</button></li>
+                    <li><button class="qfive-answers incorrect qfive-incorrect">terminal / bash</button></li>
+                    <li><button class="qfive-answers incorrect qfive-incorrect">for loops</button></li>
+                    <li><button id="qfive-correct" class="qfive-answers correct">console.log</button></li>
+                </ol>
+            </section>
+
+            <section id="all-done">
+                <p id="finish">
+                    All done!
+                </p>
+
+                <p id="totalscore">
+                    Total score: <span id="score"></span> 
+                </p>
+                <form>
+                    <label id="initials">initials: </label>
+                    <input id="user-initials" type="text">
+                    <input id="submit-button" type="submit">
+                </form>
+            </section>
+
+            <section id="correct">
+                <h3>Correct</h3>
+            </section>
+
+            <section id="correct">
+                <h3>Incorrect</h3>
+            </section>
+
+            
+        </main>
+
+    </body>
+
+    <script src="assets/js/script.js"></script>
+
+</html>

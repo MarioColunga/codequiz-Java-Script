@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button, #submit-button {
+    color: white;
+    width: 25%;
+    font-size: 16px;
+    margin: 0.5%;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgb(199, 0, 199);
+    border: none;
+}
+    
+   
+
+button:hover, #submit-button:hover {
+    cursor: pointer;
+    background-color: rgb(199, 0, 199);
+}
+
+button:active, #submit-button:active {
+    box-shadow: 0px 0px 10px 5px rgb(0, 150, 243);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0% 5%;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    padding: 0% 20% 5% 20%;
+}
+
+#qone, #qtwo, #qthree, #qfour, #qfive, #incorrect, #correct, #all-done {
+    display: none;
+}
+.questions p, #finish {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0% 0% 3% 0%;
+    padding: 0% 10% 0% 0%;
+}
+
+#incorrect, #correct {
+    font-style:italic;
+    border-top: solid 5px black;
+    margin: 2% 0%;
+}
+#rules {
+    text-align: center;
+    margin: 0% 0% 2% 0%;
+}
+
+#rules h1 {
+    font-size: 35px;
+    margin: 2%;
+}
+
+#rules p, #totalscore, #alias {
+    margin: 2% 0%;
+}
+
+.questions {
+    text-align: center;
+    margin: 0% 0% 2% 0%;
+}
